@@ -6,16 +6,48 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/svgjs/dist/svg.js"></script>
     <script src="main.js"></script>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        #drawing {
-            height: 600px;
+        #stage {
             width: 100%;
+            height: 300px;
             text-align: center;
+        }
+
+        .controls {
+            padding: 20px;
+        }
+
+        label {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div id="drawing"> </div>
+    <div id="stage"> </div>
+    </div>
+    
+    <div class='controls'>
+        <label for='credit'><input id='credit' data-image='creditCard.png' type="checkbox" name="option"/>Credit card</label>
+        <label for='student'><input id='student' data-image='studentLoan.png' type="checkbox" name="option"/>Student Loan</label>
+        <label for='personal'><input id='personal' data-image='personalLoan.png' type="checkbox" name="option"/>Personal Loan</label>
+        <label for='car'><input id='car' data-image='car.png' type="checkbox" name="option"/>Car</label>
+        <label for='mortgage'><input id='mortgage' data-image='homeLoan.png' type="checkbox" name="option"/>Mortgage</label>
+        <label for='shark'><input id='shark' data-image='wallet.png' type="checkbox" name="option"/>Loan Shark</label>
+        <label for='nandos'><input id='nandos' data-image='somethingSpecial.png' type="checkbox" name="option"/>Nandos Tab</label>
+        <label for='safe'><input id='safe' data-image='safe.png' type="checkbox" name="option"/>Bank Fees</label>
+        <label for='birthdays'><input id='birthdays' data-image='present.png' type="checkbox" name="option"/>Birthdays</label>
+        <label for='home'><input id='home' data-image='homeImprovements.png' type="checkbox" name="option"/>Home Improvements</label>
+        <label for='dead'><input id='dead' data-image='criticalIllness.png' type="checkbox" name="option"/>Hospital Fees</label>
+        <label for='money'><input id='money' data-image='moneyBag.png' type="checkbox" name="option"/>Swag</label>
+        <label for='charity'><input id='charity' data-image='hand-coins.png' type="checkbox" name="option"/>Giving To Charity</label>
+        <label for='education'><input id='education' data-image='education.png' type="checkbox" name="option"/>Education</label>
+        <label for='life'><input id='life' data-image='lifeInsurance.png' type="checkbox" name="option"/>Insurance</label>
+        <!---->
+    </div>
+
+    <script>
+    </script>
 </body>
 </html>
